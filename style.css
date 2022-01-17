@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.top-header a,h4{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px;
+}
+/* ------top-banner start----- */
+.banners{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    
+}
+
+.banner-photo img{
+    width: 100%;
+    padding: 10px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color:crimson;
+    padding: 10px 30px;
+   
+}
+/* ----top-banner-end--- */
+/* -----top-logo start---- */
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+/* ------top-logo-end------ */
+/* ------popular collection start----- */
+
+.hero{
+    text-align: center;
+    padding: 20px;
+}
+.populars{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+   grid-row-gap: 20px;
+}
+.popular{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+.popular-info{
+    font-size: 20px;
+    padding: 10px;
+}
+.fas{
+    color: orange;
+}
+/* -----------------------------------------------
+      popular-collection-end
+------------------ */
+/* ------extraaa addddeddd start---- */
+.login{
+    font-size: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* ----footer content--- */
+.upper-footer{
+    background-color:#758283;
+   margin-top: 20px;
+   color: white;
+}
+
+.footer-content,.links{
+    width: 50%;
+    padding: 20px;
+}
+ .top-footer{
+     display: grid;
+     grid-template-columns: repeat(4,1fr); 
+ }
+/* ----- footer register---- */
+.register{
+    display: flex;
+   text-align: center;
+}
+.awesome{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.fab{
+    font-size: 30px;
+    color: #6A1B4D;
+}
+/* -----media query for mobile device---- */
+
+@media screen and (max-width: 688px) {
+    .top{
+        display: none;
+    }
+    .banners{
+        flex-direction: column-reverse;
+    }
+
+    .populars{
+        grid-template-columns: 1fr;
+        padding: 10px;
+       
+    }
+
+}
